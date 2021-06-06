@@ -49,6 +49,7 @@ html:focus-within {
 
 .top_image .background {
 	height: 100vh;
+	min-height: 700px;
 }
 
 .top_image .background img {
