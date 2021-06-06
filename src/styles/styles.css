@@ -392,19 +392,31 @@ button {
    
 }
 
+.textWhite {
+	color:#fff;
+}
+
 .lyrics {
 	color: #fff;
 	text-align: center;
 	margin: 100px 0;
 }
 
-.about-page .logo {
+.about-page .logo, .page .logo {
 	text-align: center;
 	margin: 62px 0;
 }
 
-.about-page .logo svg path {
+.about-page .logo svg path, .page .logo svg path {
 	fill: #fff;
+}
+
+.page h1, .page p {
+	text-align: center;
+}
+
+.page .embed {
+	padding-top: 0;
 }
 
 .no-scroll {
