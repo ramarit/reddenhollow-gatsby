@@ -44,12 +44,12 @@ html:focus-within {
 }
 
 .top_image .logo svg path {
-	fill: rgba(0, 0, 0, .3);
+	fill: #fff;
 }
 
 .top_image .background {
 	height: 100vh;
-	min-height: 700px;
+	min-height: 465px;
 }
 
 .top_image .background img {
@@ -131,7 +131,7 @@ html:focus-within {
 .navigation {
 	padding: 0;
 	position: absolute;
-	right: 30px;
+	left: 30px;
 	top: 150px;
 	z-index: 10;
 	/*width: 100%*/
@@ -161,6 +161,7 @@ html:focus-within {
 
 .navigation p { 
 	color: #fff;
+	font-weight: bold;
 	display:inline-block; 
 	margin:0;
 	width: 100%;
@@ -209,11 +210,35 @@ html:focus-within {
 	text-decoration: none;
 } 
 
+video {
+	width: 100vw;
+	height: 100vh;
+	min-height: 465px;
+	object-fit: cover;
+	object-position: 65%;
+}
+
 .embed {
 	position: relative;
 	background: #1b1417;
-	display: block;
-	padding: 250px 0 200px;
+	/*display: block;*/
+	margin: 250px 0 200px;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.embed .video {
+	margin-bottom: 50px;
+}
+
+.embed .video p {
+	text-align: center;
+	color: #fff;
+	font-size: 22px;
+}
+
+.embed .video a {
+	color: #fff;
 }
 
 .embed iframe {
@@ -221,14 +246,13 @@ html:focus-within {
 	margin: auto;
 
 	border: 0;
-	width: 500px;
-	height: 307px;
-
-	    border: 0;
-    width: 100%;
+	width: 350px;
+	height: 621px;
+    /*width: 100%;*/
     display: block;
     margin: auto;
-    max-width: 500px
+    /*max-width: 500px*/
+
 }
 
 
@@ -407,7 +431,7 @@ button {
 	margin: 62px 0;
 }
 
-.about-page .logo svg path, .page .logo svg path {
+.about-page .logo svg path, .page .logo svg path, .logo svg path {
 	fill: #fff;
 }
 
@@ -644,6 +668,12 @@ button {
 @media (max-height: 500px) {
 	.navigation li a {
 		font-size: 24px;
+	}
+}
+
+@media (min-width: 991px) { 
+	.embed {
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
