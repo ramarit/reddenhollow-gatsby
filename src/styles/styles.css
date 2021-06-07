@@ -50,7 +50,6 @@ html:focus-within {
 .top_image .background {
 	height: 100vh;
 	min-height: 465px;
-	background: radial-gradient(ellipse at center, #ffeeac 0%, #5b2c15 100%);
 }
 
 .top_image .background::after {

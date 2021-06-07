@@ -39,9 +39,19 @@ export default function Home() {
         <div className="top_image">
     <div className="background images">
         <div className="video">
-    <video width="100%" height="100vh"  preload='auto' poster={poster} loop autoPlay muted playsinline>
-      <source src={reddenhollow} type="video/mp4" />
-    </video>
+        <div dangerouslySetInnerHTML={{ __html: `
+        <video
+          preload
+          loop
+          muted
+          autoplay
+          playsinline
+          poster="/video_cover.jpeg"
+          src="/reddenhollow-compressed.mp4"
+          type="video/mp4"
+        />,
+      ` }}></div>
+    
   </div>
       </div>
     
