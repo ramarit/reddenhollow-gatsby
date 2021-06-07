@@ -83,8 +83,8 @@ export default function Home() {
 
   </div>
 
-  <div id="music" className="embed">
-    <div className="video">
+  <div className="embed">
+    <div id="music" className="video">
       <Iframe iframeSrcURL="https://bandcamp.com/EmbeddedPlayer/album=1251146157/size=large/bgcol=ffffff/linkcol=333333/transparent=true/" />
     </div>
     <div className="video">
