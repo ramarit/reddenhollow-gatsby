@@ -39,7 +39,7 @@ export default function Home() {
         <div className="top_image">
     <div className="background images">
         <div className="video">
-    <video width="100%" height="100vh"  preload='auto' poster={poster} loop autoPlay muted>
+    <video width="100%" height="100vh"  preload='auto' poster={poster} loop autoPlay muted playsinline>
       <source src={reddenhollow} type="video/mp4" />
     </video>
   </div>
