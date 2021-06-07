@@ -19,7 +19,7 @@ import bio from "../images/bio.jpg"
 import mirror from "../images/taylormirror.jpg"
 import SFwindow from "../images/sanfranwindow.jpg"
 import van from "../images/taylorfrontvan.jpg"
-import reddenhollow from "../videos/reddenhollow.mp4"
+import reddenhollow from "../videos/reddenhollow-compressed.mp4"
 import poster from "../images/video_cover.jpeg"
 
 export default function Home() {
