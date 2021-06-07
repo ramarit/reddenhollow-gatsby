@@ -14,13 +14,14 @@ import fb from "../images/fb-icon.svg"
 import ig from "../images/instagram-icon.svg"
 import bandcamp from "../images/bandcamp.svg"
 import spotify from "../images/spotify.svg"
+import youtube from "../images/youtube.svg"
 import crow from "../images/crying-crow-black.svg"
 import bio from "../images/bio.jpg"
 import mirror from "../images/taylormirror.jpg"
 import SFwindow from "../images/sanfranwindow.jpg"
 import van from "../images/taylorfrontvan.jpg"
 import reddenhollow from "../videos/reddenhollow-compressed.mp4"
-import poster from "../images/video_cover.jpeg"
+import screenshot from "../images/reddenhollow-new.jpg"
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
         <title>reddenhollow - home</title>
         <meta property="og:title" content="reddenhollow - home"></meta>
         <meta property="og:description" content="When listening to indie band Reddenhollow, you will likely hear a story about yourself. The intricate, guitar-based songs on the debut EP, Haunt Me, tell the story that ensues the end of a troubled relationship - the break up with yourself."></meta>
-        <meta property="og:image" content={poster}></meta>
+        <meta property="og:image" content={screenshot}></meta>
         <meta property="og:type" content="website"></meta>
         <meta property="og:url" content="https://www.reddenhollow.com/"></meta>
         <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -38,21 +39,7 @@ export default function Home() {
       <main>
         <div className="top_image">
     <div className="background images">
-        <div className="video">
-        <div dangerouslySetInnerHTML={{ __html: `
-        <video
-          preload
-          loop
-          muted
-          autoplay
-          playsinline
-          poster="/video_cover.jpeg"
-          src="/reddenhollow-compressed.mp4"
-          type="video/mp4"
-        />,
-      ` }}></div>
-    
-  </div>
+        <Video></Video>
       </div>
     
     <ul className="navigation">
@@ -61,8 +48,8 @@ export default function Home() {
         <li><Link to="#shows"><p className="fromRight">shows</p></Link></li>
         <li><Link to="#contact"><p className="fromRight">contact</p></Link></li>
         <li><div className="social">
-      <a href="https://www.facebook.com/reddenhollow/" target="_blank" rel="noreferrer">
-        <img src={fb} alt="Facebook icon" /></a>
+      <a href="https://www.youtube.com/channel/UCByZ4wLD1-oE3gYRngMEAzg" target="_blank" rel="noreferrer">
+        <img src={youtube} alt="Youtube icon" /></a>
 
       <a href="https://www.instagram.com/reddenhollow_/" target="_blank" rel="noreferrer">
         <img src={ig} alt="Instagram icon" /></a>
@@ -156,9 +143,8 @@ export default function Home() {
 
   <footer>
     <div className="social">
-      <a href="https://www.facebook.com/reddenhollow/" target="_blank" rel="noreferrer">
-        <img src={fb} alt="Bandcamp icon" />
-      </a>
+      <a href="https://www.youtube.com/channel/UCByZ4wLD1-oE3gYRngMEAzg" target="_blank" rel="noreferrer">
+        <img src={youtube} alt="Youtube icon" /></a>
       <a href="https://www.instagram.com/reddenhollow_/" target="_blank" rel="noreferrer">
         <img src={ig} alt="Instagram icon" /></a>
       <a href="https://reddenhollow.bandcamp.com/" target="_blank" rel="noreferrer">
