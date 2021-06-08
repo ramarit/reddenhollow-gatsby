@@ -326,7 +326,7 @@ form td {
 	text-align: center;
 }
 
-form td span {
+form td span, form td label {
   color: #fff;
   font-size: 14px;
 }

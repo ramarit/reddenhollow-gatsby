@@ -111,7 +111,7 @@ export default function Home() {
   <div id="shows" className="tour">
     <a class="bit-widget-initializer" data-artist-name="reddenhollow" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="false" data-text-color="#FFFFFF" data-link-color="#fff" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-display-start-time="true" data-link-text-color="#000" data-display-lineup="false" data-display-play-my-city="false" data-separator-color="rgba(124,124,124,0.25)"></a>
   </div>
-  
+
 
   <div id="contact" className="contact">
     <p>Subscribe to the mailing list.</p>
@@ -123,16 +123,16 @@ export default function Home() {
       <td colspan="2"><br /></td>
       </tr>
       <tr>
-      <td valign="top"><span>E-mail address:</span></td>
-      <td valign="top"><input size="20" name="YMP0" type="text" /></td>
+      <td valign="top"><label for="email">E-mail address:</label></td>
+      <td valign="top"><input name="email" size="20" name="YMP0" type="text" /></td>
       </tr>
       <tr>
-      <td valign="top"><span>First Name:</span></td>
-      <td valign="top"><input size="20" name="YMP1" type="text" /></td>
+      <td valign="top"><label for="firstName">First Name:</label></td>
+      <td valign="top"><input name="firstName" size="20" name="YMP1" type="text" /></td>
       </tr>
       <tr>
-      <td valign="top"><span>Last Name:</span></td>
-      <td valign="top"><input size="20" name="YMP2" type="text" /></td>
+      <td valign="top"><label for="lastName">Last Name:</label></td>
+      <td valign="top"><input name="lastName" size="20" name="YMP2" type="text" /></td>
       </tr>
       <tr>
       <td colspan="2"><input value="Submit" type="submit" />&nbsp;</td>
@@ -142,8 +142,8 @@ export default function Home() {
     </form>}
 
     <div className="email">
-      <p>contact: <br /><a href="mailto:reddenhollow@gmail.com">reddenhollow@gmail.com</a></p>
-      <p>booking: <br /><a href="mailto:reddenhollow@gmail.com">reddenhollowbooking@gmail.com</a></p>
+      <p>contact: <br /><a href="mailto:reddenhollow@gmail.com" rel="noreferrer" target="_blank">reddenhollow@gmail.com</a></p>
+      <p>booking: <br /><a href="mailto:reddenhollow@gmail.com" rel="noreferrer" target="_blank">reddenhollowbooking@gmail.com</a></p>
     </div>
     
   </div>
