@@ -1,8 +1,9 @@
 import * as React from 'react'
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
+import loadable from "@loadable/component";
 
-import Iframe from "../components/iframe"
+// import Iframe from "../components/iframe"
 import Video from "../components/video"
 
 import "../styles/styles.css"
@@ -22,6 +23,10 @@ import SFwindow from "../images/sanfranwindow.jpg"
 import van from "../images/taylorfrontvan.jpg"
 import reddenhollow from "../videos/reddenhollow-compressed.mp4"
 import screenshot from "../images/reddenhollow-new.jpg"
+
+const Iframe = loadable(() => import("../components/iframe"), {
+  fallback: <div className="textWhite">Loading...</div>
+});
 
 export default function Home() {
   return (
