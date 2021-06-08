@@ -33,6 +33,7 @@ export default function Home() {
     <>
       <Helmet>
         <title>reddenhollow - home</title>
+        <meta name="description" content="When listening to indie band Reddenhollow, you will likely hear a story about yourself. The intricate, guitar-based songs on the debut EP, Haunt Me, tell the story that ensues the end of a troubled relationship - the break up with yourself."></meta>
         <meta property="og:title" content="reddenhollow - home"></meta>
         <meta property="og:description" content="When listening to indie band Reddenhollow, you will likely hear a story about yourself. The intricate, guitar-based songs on the debut EP, Haunt Me, tell the story that ensues the end of a troubled relationship - the break up with yourself."></meta>
         <meta property="og:image" content={screenshot}></meta>
@@ -77,10 +78,10 @@ export default function Home() {
 
   <div className="embed">
     <div id="music" className="video">
-      <Iframe iframeSrcURL="https://bandcamp.com/EmbeddedPlayer/album=1251146157/size=large/bgcol=ffffff/linkcol=333333/transparent=true/" />
+      <Iframe iframeTitle="Crying Crow EP" iframeSrcURL="https://bandcamp.com/EmbeddedPlayer/album=1251146157/size=large/bgcol=ffffff/linkcol=333333/transparent=true/" />
     </div>
     <div className="video">
-      <Iframe iframeSrcURL="https://bandcamp.com/EmbeddedPlayer/album=1462305287/size=large/bgcol=ffffff/linkcol=333333/transparent=true/" />
+      <Iframe iframeTitle="Haunt Me EP" iframeSrcURL="https://bandcamp.com/EmbeddedPlayer/album=1462305287/size=large/bgcol=ffffff/linkcol=333333/transparent=true/" />
       <p><Link to="/haunt-me-lyrics">lyrics</Link></p>
     </div>
   </div>
@@ -108,8 +109,9 @@ export default function Home() {
   </div>
 
   <div id="shows" className="tour">
-    <a className="bit-widget-initializer" data-artist-name="reddenhollow" data-display-local-dates="true" data-display-past-dates="true" data-auto-style="false" data-text-color="#FFFFFF" data-link-color="#fff" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-link-text-color="#000" data-display-lineup="false" data-display-play-my-city="true" data-separator-color="rgba(124,124,124,0.25)"></a>
+    <a class="bit-widget-initializer" data-artist-name="reddenhollow" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="false" data-text-color="#FFFFFF" data-link-color="#fff" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-display-start-time="true" data-link-text-color="#000" data-display-lineup="false" data-display-play-my-city="false" data-separator-color="rgba(124,124,124,0.25)"></a>
   </div>
+  
 
   <div id="contact" className="contact">
     <p>Subscribe to the mailing list.</p>
