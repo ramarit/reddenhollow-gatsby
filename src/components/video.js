@@ -1,6 +1,6 @@
 import React from "react"
 
-import background_video from "../videos/reddenhollow.mp4"
+import background_video from "../videos/reddenhollow-compressed.mp4"
 
 const Video = ({ ...props }) => (
   <div className="video">
