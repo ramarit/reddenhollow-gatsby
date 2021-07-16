@@ -215,8 +215,10 @@ html:focus-within {
 	margin: auto;
 
 	border: 0;
-	width: 100%;
-	min-height: 621px;
+	max-width: 350px;
+  width: 100%;
+	min-height: 690px;
+  height: auto;
     /*width: 100%;*/
     display: block;
     margin: auto;
@@ -629,6 +631,7 @@ button {
 
   .embed iframe {
   	width: 350px;
+    min-height: 621px;
   }
 }
 
