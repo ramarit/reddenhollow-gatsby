@@ -9,9 +9,6 @@ import Video from "../components/video"
 import "../styles/styles.css"
 import "../styles/normalize.css"
 
-import background from "../images/background_image.jpg"
-import cutout from "../images/cutout_edit.png"
-import fb from "../images/fb-icon.svg"
 import ig from "../images/instagram-icon.svg"
 import bandcamp from "../images/bandcamp.svg"
 import spotify from "../images/spotify.svg"
@@ -21,7 +18,6 @@ import bio from "../images/bio.jpg"
 import mirror from "../images/taylormirror.jpg"
 import SFwindow from "../images/sanfranwindow.jpg"
 import van from "../images/taylorfrontvan.jpg"
-import reddenhollow from "../videos/reddenhollow-compressed.mp4"
 import screenshot from "../images/reddenhollow-new.jpg"
 
 const Iframe = loadable(() => import("../components/iframe"), {
@@ -79,6 +75,7 @@ export default function Home() {
   <div className="embed">
     <div id="music" className="video">
       <Iframe iframeTitle="Crying Crow EP" iframeSrcURL="https://bandcamp.com/EmbeddedPlayer/album=1251146157/size=large/bgcol=ffffff/linkcol=333333/transparent=true/" />
+      <p><Link to="/crying-crow-lyrics">lyrics</Link></p>
     </div>
     <div className="video">
       <Iframe iframeTitle="Haunt Me EP" iframeSrcURL="https://bandcamp.com/EmbeddedPlayer/album=1462305287/size=large/bgcol=ffffff/linkcol=333333/transparent=true/" />
@@ -108,8 +105,10 @@ export default function Home() {
 
   </div>
 
-  <div id="shows" className="tour">
-    <a class="bit-widget-initializer" data-artist-name="reddenhollow" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="false" data-text-color="#FFFFFF" data-link-color="#fff" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-display-start-time="true" data-link-text-color="#000" data-display-lineup="false" data-display-play-my-city="false" data-separator-color="rgba(124,124,124,0.25)"></a>
+  <div id="shows">
+    <div className="tour">
+      <a class="bit-widget-initializer" data-artist-name="reddenhollow" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="false" data-text-color="#FFFFFF" data-link-color="#fff" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-display-start-time="true" data-link-text-color="#000" data-display-lineup="false" data-display-play-my-city="false" data-separator-color="rgba(124,124,124,0.25)"></a>
+    </div>
   </div>
 
 

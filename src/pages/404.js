@@ -2,31 +2,6 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 
-import Iframe from "../components/iframe"
-
-// styles
-const pageStyles = {
-  color: "#fff",
-  padding: "96px",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-
 // markup
 const NotFoundPage = () => {
   return (
