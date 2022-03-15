@@ -88,7 +88,7 @@ export default function Home() {
 
   <div id="about" className="bio">
     <img src={bio} alt="playing music" />
-    <p data-aos="fade-left">Reddenhollow songs have a way of wrapping around one’s life. Truly listening to them feels like stepping into a river. The separation between Taylor Moses’s melody, story and my own heart disappears and before I can articulate or understand it, the songs speak my own story - a witness to my secret grief and to my rising dreams. I would like to turn my body into smoke, mist, rain, light and let these songs take me somewhere sacred.<br />
+    <p data-aos="fade-left">"Reddenhollow songs have a way of wrapping around one’s life. Truly listening to them feels like stepping into a river. The separation between Taylor Moses’s melody, story and my own heart disappears and before I can articulate or understand it, the songs speak my own story - a witness to my secret grief and to my rising dreams. I would like to turn my body into smoke, mist, rain, light and let these songs take me somewhere sacred.<br />
 
 The unique timbre, grit and depth to Taylor’s voice sounds something ancient. In this collection of songs, Taylor takes us on one journey. The soft moments are so beautifully fragile that they allow me to walk through them while wounded, and suddenly throughout, Taylor’s voice takes us and the loving resolve and almost righteous anger become enough to pull us out of our suffering and onto ever present ground.” - Mimi Gilbert</p>
   </div>
